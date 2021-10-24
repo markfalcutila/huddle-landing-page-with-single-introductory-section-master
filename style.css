@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;700&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+section{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+}
+.container{
+   
+    flex-direction: column;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--Violet);
+    padding:30px 40px;
+    height: auto;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%; 
+}
+.logo img{
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.left img{
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.right{
+    text-align: center;
+}
+
+.right h2{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+.right p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-bottom:20px;
+    color:#fff;
+}
+.right button{
+    padding:10px 70px;
+    border-radius: 30px;
+    border:none;
+    outline:none;
+    color:var(--Violet);
+    margin-bottom:50px;
+    font-size: 12px;
+    box-shadow: 0px 20px 20px -10px rgb(23 25 41 / 20%);
+}
+
+.icon span{
+    font-size: 0.9rem;
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding:8px 12px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.right button:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+.icon span:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+@media screen and (min-width:1200px){
+    .container{
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding:30px 80px;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .logo img{
+        width: 200px;
+        margin-bottom: 50px;
+    }
+    .right{
+        padding:0px 50px;
+        text-align: left;
+    }
+    .right h2{
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        font-weight: 600;
+        font-size: 2.5rem;
+        padding:0 70px 20px 0px;
+    }
+    .right p{
+        word-spacing: 1px;
+        font-size: 1.1rem;
+        padding-bottom:40px;
+        line-height: 30px;
+    }
+    .right button{
+        padding:15px 70px;
+        border-radius: 30px;
+        border:none;
+        outline:none;
+        color:var(--Violet);
+        margin-bottom:50px;
+        font-size: 16px;
+        box-shadow: 0px 20px 20px -10px rgb(23 25 41 / 20%);
+    }
+    .icon{
+        position: absolute;
+        bottom: 50px;
+        right: 130px;
+        
+    }
+    .icon span{
+        font-size: 1rem;
+        color:#fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding:8px 12px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+
+}
