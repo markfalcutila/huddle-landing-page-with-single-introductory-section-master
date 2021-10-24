@@ -100,6 +100,15 @@ section{
     color: var(--Soft-Magenta);
     border-color: var(--Soft-Magenta);
 }
+.attribution{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.attribution a{ 
+    text-decoration: none;
+}
 @media screen and (min-width:1200px){
     .container{
         background-image: url(images/bg-desktop.svg);
